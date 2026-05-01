@@ -21,15 +21,25 @@ public class Inventory : MonoBehaviour
             if (!mainInventoryUIOpen)
             {
                 Debug.Log("Inventory is closed, opening");
+
                 mainInventoryUI.SetActive(true);
                 mainInventoryUIOpen = true;
+
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
                 return;
             }
             if (mainInventoryUIOpen)
             {
                 Debug.Log("Invetory is already open, closing");
+
                 mainInventoryUI.SetActive(false);
                 mainInventoryUIOpen = false;
+
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+
                 return;
             }
 
