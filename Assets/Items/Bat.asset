@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Bat
   m_EditorClassIdentifier: Assembly-CSharp::Item
   type: 0
-  itemType: 0
-  actionType: 0
+  itemType: 1
+  actionType: 2
   range: {x: 5, y: 4, z: 0}
   stackable: 0
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 40e1ac540c3bd2344a765adb8d5d2ab3, type: 3}
